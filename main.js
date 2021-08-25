@@ -12,13 +12,8 @@ class Field {
   
     print() {
         for(let i = 0; i < this.field.length; i ++) {
-            // console.log(`Row; ${i}`);
-            for(let j = 0; j < this.field[i].length; j++) {
-                // console.log(`j: ${j}`);
-                process.stdout.write(this.field[i][j] + " ");
-                // process.stdout.write(this.field[i][j]);
-            }
-            console.log();
+            const line = this.field[i].join('');
+            console.log(line);
         }
     }
   }
